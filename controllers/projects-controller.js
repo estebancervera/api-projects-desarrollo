@@ -65,7 +65,7 @@ async function updateProject(req, res) {
 			updatedProject.image = req.file.key;
 			updatedProject.save();
 		}
-		console.log(updatedProject);
+		//console.log(updatedProject);
 		res.status(200).json({ error: false, msg: 'Project updated', data: updatedProject });
 	} catch (error) {
 		console.error(error);
